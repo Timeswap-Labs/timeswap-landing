@@ -241,12 +241,6 @@ export default {
           designation: 'Angel / ex Binance Labs',
         },
         {
-          person: 'CryptoGorillaYT',
-          link: 'https://twitter.com/CryptoGorillaYT',
-          name: 'Crypto Gorilla',
-          designation: 'Youtuber',
-        },
-        {
           person: 'crypturco',
           link: 'https://twitter.com/crypturco',
           name: '3nes',
