@@ -195,23 +195,6 @@ export default {
           ],
         },
         {
-          image: 'mostafa',
-          name: 'Mostafa',
-          lname: 'Abouzeid',
-          designation: 'Lead - Front End Engineer',
-          description: 'Your Favorite T-Shaped Software Engineer',
-          socials: [
-            {
-              link: 'https://www.linkedin.com/in/mostafatalaat770/',
-              image: 'linkedin',
-            },
-            {
-              link: 'https://github.com/mostafatalaat770',
-              image: 'github',
-            },
-          ],
-        },
-        {
           image: 'varun',
           name: 'Varun',
           lname: 'Krishna',
