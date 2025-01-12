@@ -9,11 +9,11 @@
 
       <SecondPage :class="$style.section" />
 
+      <TimeToken :class="$style.section" />
+
       <OurProduct :class="$style.section" />
 
       <KeyFeature :class="$style.section" />
-
-      <TimeToken :class="$style.section" />
 
       <OurTeam :class="$style.section" />
 

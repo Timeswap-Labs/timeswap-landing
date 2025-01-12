@@ -150,7 +150,7 @@ export default {
           description: 'DeFi products and investments',
           socials: [
             {
-              link: 'https://twitter.com/mimiLFG',
+              link: 'https://twitter.com/defi_mimi',
               image: 'twitter',
             },
             {
@@ -252,18 +252,18 @@ export default {
           ],
         },
         {
-          image: 'harsha',
-          name: 'Harsha',
-          lname: 'Kakaraparthy',
-          designation: 'Community Manager',
-          description: 'Weeb | learnoor | tenacious',
+          image: 'muktanshu',
+          name: 'Muktanshu',
+          lname: 'Mishra',
+          designation: 'Lead Frontend Developer',
+          description: 'The FAFO Guy | Music | Games',
           socials: [
             {
-              link: 'https://twitter.com/Harsha52173432',
+              link: 'https://x.com/MuktanshuM',
               image: 'twitter',
             },
             {
-              link: '',
+              link: 'https://www.linkedin.com/in/muktanshu-mishra-278a85181/',
               image: 'linkedin',
             },
           ],
@@ -286,6 +286,58 @@ export default {
             },
           ],
         },
+        {
+          image: 'tarik',
+          name: 'Tarik',
+          lname: 'Toromanovic',
+          designation: 'Community Manager',
+          description: 'DeFi enthusiast',
+          socials: [
+            {
+              link: 'https://x.com/thrayant',
+              image: 'twitter',
+            },
+            {
+              link: 'https://www.linkedin.com/in/tarik-toromanovi%C4%87-1883151a2/',
+              image: 'linkedin',
+            },
+          ],
+        },
+        {
+          image: 'jachin',
+          name: 'Jachin Jose',
+          lname: 'Victor',
+          designation: 'Content Writer',
+          description: 'Lawyer and Web3 disciple by dawn. Powerlifter by dusk.',
+          socials: [
+            {
+              link: 'https://x.com/boazlex',
+              image: 'twitter',
+            },
+            {
+              link: 'https://www.linkedin.com/in/jachin-victor-3553b1232',
+              image: 'linkedin',
+            },
+          ],
+        },
+        {
+          image: 'jerry',
+          name: 'Jerry',
+          lname: 'Wong',
+          designation: 'Full Stack Developer',
+          description:
+            'Not Degen | Little Dev | Half Trader | Lib Finder | 今日本語専攻中 | Fatboy (try to lose weight)',
+          socials: [
+            {
+              link: 'https://x.com/zetai_moumantai',
+              image: 'twitter',
+            },
+            {
+              link: 'https://www.linkedin.com/in/jerry-wong-676b6b284/',
+              image: 'linkedin',
+            },
+          ],
+        },
       ],
       advisors: [
         {
@@ -295,13 +347,13 @@ export default {
           designation: 'Founding Advisor<br/>Co-founder, Polygon',
           link: 'https://twitter.com/sandeepnailwal',
         },
-        {
-          image: 'jaynti',
-          name: 'Jaynti',
-          lname: 'Kanani',
-          designation: 'ex Co-founder, Polygon',
-          link: 'https://twitter.com/jdkanani',
-        },
+        // {
+        //   image: 'jaynti',
+        //   name: 'Jaynti',
+        //   lname: 'Kanani',
+        //   designation: 'ex Co-founder, Polygon',
+        //   link: 'https://twitter.com/jdkanani',
+        // },
       ],
     }
   },

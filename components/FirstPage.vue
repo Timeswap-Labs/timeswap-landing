@@ -2,7 +2,8 @@
   <section :class="$style.firstPage">
     <div :class="$style.content">
       <h1 id="bigtitle" :class="$style.mainTitle">
-        Non-liquidatable leverage for any token
+        Permissionless DeFi Infrastructure for capturing time value of any
+        asset.
       </h1>
       <div :class="$style.chainList">
         <span style="width: 100%; margin-bottom: 8px">Live on</span>
@@ -30,40 +31,33 @@ export default {
     return {
       supportedChains: [
         {
-          name: 'Ethereum',
-          image: 'ETH',
-        },
-        {
           name: 'Arbitrum',
           image: 'ARB',
-        },
-        {
-          name: 'Polygon',
-          image: 'MATIC',
-        },
-        {
-          name: 'Base',
-          image: 'BASE',
         },
         {
           name: 'Mantle',
           image: 'MANTLE',
         },
         {
-          name: 'Polygon zkEVM',
-          image: 'zkEVM',
+          name: 'Base',
+          image: 'BASE',
         },
         {
           name: 'Optimism',
           image: 'OP',
         },
         {
-          name: 'Injective',
-          image: 'INJ',
+          name: 'Ethereum',
+          image: 'ETH',
+        },
+
+        {
+          name: 'Polygon',
+          image: 'MATIC',
         },
         {
-          name: 'X Layer',
-          image: 'XLAYER',
+          name: 'Berachain Bartio Testnet',
+          image: 'beratest',
         },
       ],
     }
@@ -163,9 +157,11 @@ export default {
       100% {
         transform: translateX(0);
       }
+
       40% {
         transform: translateX(-20px);
       }
+
       60% {
         transform: translateX(-10px);
       }
@@ -179,9 +175,11 @@ export default {
       100% {
         transform: translate(-50%, 0) rotate(90deg);
       }
+
       40% {
         transform: translate(-50%, -20px) rotate(90deg);
       }
+
       60% {
         transform: translate(-50%, -10px) rotate(90deg);
       }
@@ -230,7 +228,7 @@ export default {
     .mainTitle {
       line-height: 1.2;
       color: $white;
-      font-weight: 700;
+      font-weight: 600;
       font-family: $hk_bold;
       margin-bottom: 20px;
       opacity: 0;

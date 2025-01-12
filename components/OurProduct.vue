@@ -43,7 +43,7 @@ export default {
             'With Isolated pools, Timeswap offers flexibility for lenders and borrowers to decide their risk profile with interest rates & collateral factors.',
         },
         {
-          title: 'Permissionless Pools',
+          title: 'Money Markets for Any Assets',
           description:
             'Timeswap AMM enables creation of fixed maturity lending & borrowing markets for any fungible token without dependency on external price feeds.',
         },

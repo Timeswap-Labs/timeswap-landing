@@ -44,7 +44,7 @@ export default {
         },
         {
           image: 'key-icon-6',
-          title: 'Independent AMM',
+          title: 'Permissionless pools',
           description:
             'Anyone can create a pool for any fungible token by providing necessary liquidity.',
         },
