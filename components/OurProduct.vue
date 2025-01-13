@@ -28,7 +28,7 @@ export default {
     return {
       products: [
         {
-          title: 'Fixed interest lending & borrowing',
+          title: 'Fixed Interest Lending & Borrowing',
           description:
             'Timeswap pools provide fixed rate lending/borrowing for the duration of the pool.',
         },

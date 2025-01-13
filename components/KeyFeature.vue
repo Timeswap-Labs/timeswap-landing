@@ -32,19 +32,19 @@ export default {
       features: [
         {
           image: 'key-icon-1',
-          title: 'Non-liquidatable leverage',
+          title: 'Non-Liquidatable Leverage',
           description:
             'Borrowers can access leverage without worrying about price based liquidations for the duration of the pool. ',
         },
         {
           image: 'key-icon-4',
-          title: 'Yield on any asset',
+          title: 'Yield on Any Asset',
           description:
             "Earn yield on any token including long-tail assets, priced based on it's demand for leverage.",
         },
         {
           image: 'key-icon-6',
-          title: 'Permissionless pools',
+          title: 'Permissionless Pools',
           description:
             'Anyone can create a pool for any fungible token by providing necessary liquidity.',
         },
