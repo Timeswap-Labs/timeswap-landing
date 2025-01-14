@@ -139,7 +139,7 @@ export default {
         {
           image: 'twitterr',
           link: 'https://twitter.com/TimeswapLabs',
-          name: 'Twitter',
+          name: 'X',
         },
         {
           image: 'discordr',
