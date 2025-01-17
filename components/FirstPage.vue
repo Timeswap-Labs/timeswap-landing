@@ -3,7 +3,7 @@
     <div :class="$style.content">
       <h1 id="bigtitle" :class="$style.mainTitle">
         Permissionless DeFi infrastructure for capturing time value of any asset
-        <span :class="$style.highlight">[{{ currentAsset }}]</span>
+        <span :class="$style.highlight">{{ currentAsset }}</span>
       </h1>
       <div :class="$style.chainList">
         <span style="width: 100%; margin-bottom: 8px">Live on</span>
@@ -46,6 +46,11 @@ export default {
       intervalId: null,
       supportedChains: [
         {
+          name: 'HyperEVM',
+          image: 'hyperevm',
+          soon: true,
+        },
+        {
           name: 'Arbitrum',
           image: 'ARB',
         },
@@ -70,13 +75,8 @@ export default {
           image: 'MATIC',
         },
         {
-          name: 'Berachain Bartio Testnet',
+          name: 'Berachain Testnet',
           image: 'beratest',
-        },
-        {
-          name: 'HyperEVM',
-          image: 'hyperevm',
-          soon: true,
         },
       ],
     }
@@ -308,7 +308,7 @@ export default {
       .soonBadge {
         position: absolute;
         top: -8px;
-        right: -20px;
+        right: -10px;
         background-color: #ff9800;
         color: $white;
         font-size: 10px;
