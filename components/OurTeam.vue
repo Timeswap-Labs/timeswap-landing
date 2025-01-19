@@ -93,7 +93,7 @@ export default {
           image: 'ricsson',
           name: 'Ricsson',
           lname: 'Ngo',
-          designation: 'Founder',
+          designation: 'Core Contributor',
           description:
             'Previously founder @Einstar. Master in Financial Mathematics from Ateneo de Manila University.',
           socials: [
@@ -111,7 +111,7 @@ export default {
           image: 'harshita',
           name: 'Harshita',
           lname: 'Singh',
-          designation: 'Co-Founder',
+          designation: 'Core Contributor',
           description:
             'Previously Head of Supply Budgeting and Planning Private Labels @Walmart-India',
           socials: [
@@ -129,7 +129,7 @@ export default {
           image: 'ameeth',
           name: 'Ameeth',
           lname: 'Devadas',
-          designation: 'Co-Founder',
+          designation: 'Core Contributor',
           description: 'Previously Head of Product & Technology @Aurigin',
           socials: [
             {
