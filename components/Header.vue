@@ -13,7 +13,7 @@
       </a>
       <a
         :class="[$style.text, $style.documentation]"
-        href="https://timeswap.gitbook.io/timeswap-v2"
+        href="https://timeswap.gitbook.io/docs/introduction/what-is-timeswap"
         target="_blank"
       >
         Docs

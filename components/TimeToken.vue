@@ -1,7 +1,7 @@
 <template>
   <section :class="$style.featurePage">
     <div :class="$style.content">
-      <h2 :class="$style.mainTitle">Time Token</h2>
+      <!-- <h2 :class="$style.mainTitle">Time Token</h2> -->
       <div :class="$style.tokenImage">
         <img :class="['animateMe']" src="@/assets/images/timetoken.svg" alt />
         <img
@@ -21,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(25, 29, 58, 0.7);
+  // background: rgba(25, 29, 58, 0.7);
   max-width: 1200px !important;
   flex: 0 0 1200px !important;
 
@@ -68,8 +68,8 @@
       margin-bottom: 80px;
 
       img {
-        width: 100%;
-        height: auto;
+        width: 75vw;
+        height: 80vh;
 
         @include media-breakpoint-down(sm) {
           display: none;

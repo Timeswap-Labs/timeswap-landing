@@ -2,7 +2,8 @@
   <section :class="$style.firstPage">
     <div :class="$style.content">
       <h1 id="bigtitle" :class="$style.mainTitle">
-        Non-liquidatable leverage for any token
+        Permissionless DeFi infrastructure for capturing time value of any asset
+        <span :class="$style.highlight">{{ currentAsset }}</span>
       </h1>
       <div :class="$style.chainList">
         <span style="width: 100%; margin-bottom: 8px">Live on</span>
@@ -18,6 +19,7 @@
             height="24px"
           />
           <span :class="$style.chainName">{{ supportedChain.name }}</span>
+          <span v-if="supportedChain.soon" :class="$style.soonBadge">Soon</span>
         </div>
       </div>
     </div>
@@ -28,50 +30,72 @@
 export default {
   data() {
     return {
+      assets: [
+        'HYPE',
+        'PURR',
+        'HFUN',
+        'BTC',
+        'ETH',
+        'PENDLE',
+        'COOK',
+        'VIRTUAL',
+        'AIXBT',
+      ],
+      currentAsset: 'HYPE',
+      assetIndex: 0,
+      intervalId: null,
       supportedChains: [
         {
-          name: 'Ethereum',
-          image: 'ETH',
+          name: 'HyperEVM',
+          image: 'hyperevm',
+          soon: true,
         },
         {
           name: 'Arbitrum',
           image: 'ARB',
         },
         {
-          name: 'Polygon',
-          image: 'MATIC',
+          name: 'Mantle',
+          image: 'MANTLE',
         },
         {
           name: 'Base',
           image: 'BASE',
         },
         {
-          name: 'Mantle',
-          image: 'MANTLE',
-        },
-        {
-          name: 'Polygon zkEVM',
-          image: 'zkEVM',
-        },
-        {
           name: 'Optimism',
           image: 'OP',
         },
         {
-          name: 'Injective',
-          image: 'INJ',
+          name: 'Ethereum',
+          image: 'ETH',
         },
         {
-          name: 'X Layer',
-          image: 'XLAYER',
+          name: 'Polygon',
+          image: 'MATIC',
+        },
+        {
+          name: 'Berachain Testnet',
+          image: 'beratest',
         },
       ],
     }
   },
-
+  mounted() {
+    this.animateAssets()
+  },
+  beforeDestroy() {
+    clearInterval(this.intervalId)
+  },
   methods: {
     getImgUrl(icon) {
       return require(`@/assets/images/chains/${icon}.png`)
+    },
+    animateAssets() {
+      this.intervalId = setInterval(() => {
+        this.assetIndex = (this.assetIndex + 1) % this.assets.length
+        this.currentAsset = this.assets[this.assetIndex]
+      }, 2000) // Change text every 2 seconds
     },
   },
 }
@@ -84,7 +108,6 @@ export default {
   padding-left: 160px;
   display: flex;
   align-items: center;
-  position: relative;
 
   @include media-breakpoint-down(lg) {
     padding-left: 100px;
@@ -163,9 +186,11 @@ export default {
       100% {
         transform: translateX(0);
       }
+
       40% {
         transform: translateX(-20px);
       }
+
       60% {
         transform: translateX(-10px);
       }
@@ -179,9 +204,11 @@ export default {
       100% {
         transform: translate(-50%, 0) rotate(90deg);
       }
+
       40% {
         transform: translate(-50%, -20px) rotate(90deg);
       }
+
       60% {
         transform: translate(-50%, -10px) rotate(90deg);
       }
@@ -206,12 +233,12 @@ export default {
 
   .content {
     width: 100%;
-    max-width: 750px;
+    max-width: 900px;
     position: relative;
     z-index: 9;
 
     @include media-breakpoint-down(lg) {
-      max-width: 60%;
+      max-width: 100%;
     }
 
     @include media-breakpoint-down(md) {
@@ -228,39 +255,70 @@ export default {
     }
 
     .mainTitle {
-      line-height: 1.2;
+      line-height: 1.1;
       color: $white;
-      font-weight: 700;
+      font-size: 40px;
+      font-weight: 500;
       font-family: $hk_bold;
       margin-bottom: 20px;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-out 0.4s;
+
+      @include media-breakpoint-down(md) {
+        font-size: 28px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 24px;
+      }
+    }
+
+    .highlight {
+      color: #00ff9c;
+      // font-style: italic;
+      transition: opacity 0.5s ease-in-out;
     }
 
     .chainList {
-      color: $white;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      color: rgba(255, 255, 255, 0.8);
       justify-content: flex-start;
-      color: rgba(255, 255, 255, 0.88);
-      column-gap: 8px;
-      row-gap: 8px;
+      column-gap: 10px;
+      row-gap: 12px;
 
       .supportedChain {
         display: flex;
         align-items: center;
-        padding: 5px;
-        padding-right: 11px;
-        column-gap: 5px;
+        padding: 5px 12px;
         border-radius: 17.5px;
         background: rgba(255, 255, 255, 0.12);
         border: 1px solid rgba(255, 255, 255, 0.32);
+        position: relative;
 
         .chainName {
-          position: relative;
-          bottom: 1px;
+          margin-left: 8px;
+          font-size: 14px;
+
+          @include media-breakpoint-down(sm) {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .soonBadge {
+        position: absolute;
+        top: -8px;
+        right: -10px;
+        background-color: #ff9800;
+        color: $white;
+        font-size: 10px;
+        padding: 2px 6px;
+        border-radius: 8px;
+        font-weight: bold;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 8px;
+          padding: 1px 4px;
         }
       }
 

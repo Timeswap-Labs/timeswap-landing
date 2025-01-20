@@ -2,12 +2,12 @@
   <section :class="$style.secondPage">
     <div :class="$style.content">
       <h5 :class="$style.mainTitle">
-        Timeswap is the first fully permissionless, oracle-less,
-        non-liquidatable, fixed maturity lending & borrowing protocol.
+        Timeswap is the first oracleless lending/borrowing protocol. Timeswap
+        enables the creation of money markets for ANY ERC-20 tokens.
       </h5>
       <p :class="$style.paragraph">
-        Timeswap aims to revolutionize money markets via its unique 3 variable
-        constant product AMM
+        Coming soon! Timeswap V3 will be the end game for capturing time value
+        of any asset.
       </p>
     </div>
     <div :class="$style.imgBlock" />

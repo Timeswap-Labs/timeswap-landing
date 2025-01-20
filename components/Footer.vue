@@ -81,10 +81,6 @@ export default {
           link: 'https://twitter.com/TimeswapLabs',
         },
         {
-          image: 'ftr-telegram',
-          link: 'https://t.me/timeswap',
-        },
-        {
           image: 'ftr-four-icon',
           link: 'https://discord.GG/timeswap',
         },
@@ -93,17 +89,22 @@ export default {
           link: 'https://timeswap.medium.com/',
         },
         {
-          image: 'ftr-github',
-          link: 'https://github.com/Timeswap-Labs',
+          image: 'ftr-telegram',
+          link: 'https://t.me/timeswap',
         },
-        {
-          image: 'ftr-youtube',
-          link: 'https://www.youtube.com/channel/UCY8rACVXfPNP-P3M0cCvuEw',
-        },
+
         {
           image: 'ftr-defillama',
           link: 'https://defillama.com/protocol/timeswap',
         },
+        {
+          image: 'ftr-github',
+          link: 'https://github.com/Timeswap-Labs',
+        },
+        // {
+        //   image: 'ftr-youtube',
+        //   link: 'https://www.youtube.com/channel/UCY8rACVXfPNP-P3M0cCvuEw',
+        // },
       ],
       externalLinks: [
         {

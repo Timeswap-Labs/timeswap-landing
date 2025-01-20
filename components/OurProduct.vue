@@ -28,7 +28,7 @@ export default {
     return {
       products: [
         {
-          title: 'Fixed interest lending & borrowing',
+          title: 'Fixed Interest Lending & Borrowing',
           description:
             'Timeswap pools provide fixed rate lending/borrowing for the duration of the pool.',
         },
@@ -43,7 +43,7 @@ export default {
             'With Isolated pools, Timeswap offers flexibility for lenders and borrowers to decide their risk profile with interest rates & collateral factors.',
         },
         {
-          title: 'Permissionless Pools',
+          title: 'Money Markets for Any Assets',
           description:
             'Timeswap AMM enables creation of fixed maturity lending & borrowing markets for any fungible token without dependency on external price feeds.',
         },

@@ -139,12 +139,7 @@ export default {
         {
           image: 'twitterr',
           link: 'https://twitter.com/TimeswapLabs',
-          name: 'Twitter',
-        },
-        {
-          image: 'telegramr',
-          link: 'https://t.me/timeswap',
-          name: 'Telegram',
+          name: 'X',
         },
         {
           image: 'discordr',
@@ -155,6 +150,11 @@ export default {
           image: 'mediumr',
           link: 'https://timeswap.medium.com/',
           name: 'Medium',
+        },
+        {
+          image: 'telegramr',
+          link: 'https://t.me/timeswap',
+          name: 'Telegram',
         },
       ],
 
