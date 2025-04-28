@@ -195,33 +195,6 @@ export default {
           ],
         },
         {
-          image: 'varun',
-          name: 'Varun',
-          lname: 'Krishna',
-          designation: 'Smart Contract Developer',
-          description: '',
-          socials: [
-            {
-              link: 'https://twitter.com/_vhawk19_',
-              image: 'twitter',
-            },
-          ],
-        },
-        {
-          image: 'mai',
-          name: 'Mai',
-          lname: 'Nguyen',
-          designation: 'Design Lead',
-          description:
-            'A Product Designer with over 6 years of experience in branding and designing in Crypto & Blockchain, eCommerce, SaaS web & app, and Design systems.',
-          socials: [
-            {
-              link: 'https://www.linkedin.com/in/mai-nguyen-2b3997305/',
-              image: 'linkedin',
-            },
-          ],
-        },
-        {
           image: 'krish',
           name: 'Krish Arvind',
           lname: 'Bhatt',
@@ -334,6 +307,24 @@ export default {
             },
             {
               link: 'https://www.linkedin.com/in/jerry-wong-676b6b284/',
+              image: 'linkedin',
+            },
+          ],
+        },
+        {
+          image: 'soumik',
+          name: 'Soumik',
+          lname: 'Ghosh',
+          designation: 'Senior Backend Developer',
+          description:
+            'Startup enthusiast with 11 years of experience in system design, scalable architecture, blockchain, and machine learning, backed by strong academics.',
+          socials: [
+            {
+              link: 'https://x.com/GhoshSoumik',
+              image: 'twitter',
+            },
+            {
+              link: 'https://www.linkedin.com/in/soumik-ghosh-466b0956/',
               image: 'linkedin',
             },
           ],
