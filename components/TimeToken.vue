@@ -17,59 +17,37 @@
 <style lang="scss" module>
 .featurePage {
   position: relative;
-  padding: 100px 160px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  // background: rgba(25, 29, 58, 0.7);
-  max-width: 1200px !important;
-  flex: 0 0 1200px !important;
-
-  @include media-breakpoint-down(lg) {
-    padding-left: 100px;
-    max-width: 1000px !important;
-    flex: 0 0 1000px !important;
-  }
-
-  @include media-breakpoint-down(md) {
-    flex: 0 0 800px !important;
-    max-width: 800px !important;
-    padding: 80px 50px;
-  }
-
-  @include media-breakpoint-down(sm) {
-    max-width: 100% !important;
-    flex: 0 0 100% !important;
-    padding: 60px 24px;
-  }
-
-  @include media-breakpoint-down(xs) {
-    padding: 40px 24px;
-  }
+  width: 100vw;
+  min-height: 80vh;
+  box-sizing: border-box;
 
   .content {
-    width: 100%;
-    max-width: 860px;
-
-    .mainTitle {
-      font-family: $hk_bold;
-      line-height: 1.5;
-      color: $white;
-      margin-bottom: 80px;
-
-      @include media-breakpoint-down(xs) {
-        margin-bottom: 30px;
-      }
-    }
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 
     .tokenImage {
-      width: 100%;
-      display: block;
-      margin-bottom: 80px;
+      width: 100vw;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       img {
-        width: 75vw;
+        width: 90vw;
         height: 80vh;
+        max-width: none;
+        max-height: 80vh;
+        object-fit: contain;
+        display: block;
 
         @include media-breakpoint-down(sm) {
           display: none;
@@ -78,11 +56,11 @@
 
       .mobile {
         display: none;
-
         @include media-breakpoint-down(sm) {
           display: block;
-          max-width: 300px;
-          margin: 0 auto;
+          width: 90vw;
+          height: auto;
+          max-width: 100vw;
         }
       }
     }
