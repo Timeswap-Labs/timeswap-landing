@@ -48,7 +48,6 @@ export default {
         {
           name: 'HyperEVM',
           image: 'hyperevm',
-          soon: true,
         },
         {
           name: 'Arbitrum',
