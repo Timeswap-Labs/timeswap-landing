@@ -143,19 +143,15 @@ export default {
           ],
         },
         {
-          image: 'domica',
-          name: 'Domica',
-          lname: 'Santoso',
+          image: 'mimi',
+          name: 'Mimi',
+          lname: '',
           designation: 'Growth Product Manager',
           description: 'DeFi products and investments',
           socials: [
             {
               link: 'https://twitter.com/defi_mimi',
               image: 'twitter',
-            },
-            {
-              link: 'https://www.linkedin.com/in/domica/',
-              image: 'linkedin',
             },
           ],
         },
@@ -260,23 +256,6 @@ export default {
           ],
         },
         {
-          image: 'tarik',
-          name: 'Tarik',
-          lname: 'Toromanovic',
-          designation: 'Community Manager',
-          description: 'DeFi enthusiast',
-          socials: [
-            {
-              link: 'https://x.com/thrayant',
-              image: 'twitter',
-            },
-            {
-              link: 'https://www.linkedin.com/in/tarik-toromanovi%C4%87-1883151a2/',
-              image: 'linkedin',
-            },
-          ],
-        },
-        {
           image: 'jachin',
           name: 'Jachin Jose',
           lname: 'Victor',
@@ -315,7 +294,7 @@ export default {
           image: 'soumik',
           name: 'Soumik',
           lname: 'Ghosh',
-          designation: 'Senior Backend Developer',
+          designation: 'Lead Backend Developer',
           description:
             'Startup enthusiast with 11 years of experience in system design, scalable architecture, blockchain, and machine learning, backed by strong academics.',
           socials: [
@@ -325,6 +304,23 @@ export default {
             },
             {
               link: 'https://www.linkedin.com/in/soumik-ghosh-466b0956/',
+              image: 'linkedin',
+            },
+          ],
+        },
+        {
+          image: 'nitish',
+          name: 'Nitish',
+          lname: 'Kumar',
+          designation: 'Senior Backend Developer',
+          description: 'Backend Dev | DeFi | Coffee | Travel When Rugs Allow',
+          socials: [
+            {
+              link: 'https://x.com/nekotish',
+              image: 'twitter',
+            },
+            {
+              link: 'https://www.linkedin.com/in/tecnicalnitish/',
               image: 'linkedin',
             },
           ],
