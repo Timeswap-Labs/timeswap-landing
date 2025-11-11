@@ -191,18 +191,18 @@ export default {
           ],
         },
         {
-          image: 'krish',
-          name: 'Krish Arvind',
-          lname: 'Bhatt',
-          designation: 'Content Writer',
-          description: 'DeFi enthu. Shitposter. Little engineering.',
+          image: 'muktanshu',
+          name: 'Muktanshu',
+          lname: 'Mishra',
+          designation: 'Lead Frontend Developer',
+          description: 'The FAFO Guy | Music | Games',
           socials: [
             {
-              link: 'https://twitter.com/0xkrishb',
+              link: 'https://x.com/MuktanshuM',
               image: 'twitter',
             },
             {
-              link: 'https://www.linkedin.com/in/krish-bhatt-9776b0234',
+              link: 'https://www.linkedin.com/in/muktanshu-mishra-278a85181/',
               image: 'linkedin',
             },
           ],
@@ -217,23 +217,6 @@ export default {
             {
               link: 'https://twitter.com/PerryBerry1325',
               image: 'twitter',
-            },
-          ],
-        },
-        {
-          image: 'muktanshu',
-          name: 'Muktanshu',
-          lname: 'Mishra',
-          designation: 'Lead Frontend Developer',
-          description: 'The FAFO Guy | Music | Games',
-          socials: [
-            {
-              link: 'https://x.com/MuktanshuM',
-              image: 'twitter',
-            },
-            {
-              link: 'https://www.linkedin.com/in/muktanshu-mishra-278a85181/',
-              image: 'linkedin',
             },
           ],
         },
